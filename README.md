@@ -8,7 +8,7 @@ Note here : Function of linprog is not used since we are dealing with syms in ma
 Also check the solution in screenshot_3  
 
 
-Example digitally written a.k.a not in screenshot :
+The example, digitally written a.k.a not in screenshot :
 Consider a wireless communication system as shown in Figure 15.2.
 There are n "mobile" users. For each i — 1,..., n, user i transmits a signal to the
 base station with power pi and an attenuation factor of hi (i.e., the actual received
