@@ -67,15 +67,16 @@ end
 A=-reshape(A,n,n); %-ve as our objective is to have Ax >= b and the default for linprog is <=b
 
 
-b=0.1*ones(1,n); %b theoretically must be 0 but in matlab if it is set to 0 we get a non-trivial solution for x a,k,a x=0 0 0
+b=0.1*ones(1,n); %b theoretically must be 0 but in matlab if it is set to 0 we get a non-trivial solution for x a.k.a x= zeros
 %so we set the b to 0.1 instead of 0
 lb=[];
 ub=[];
 Aeq=[];
 beq=[];
+'The Assumed Numerical Values For Numerical Analysis Are As Follows. We Choose:'
 H_Channel_For_Each_User_Assumed = h
 With_Threshold_Assumed_For_Each_User = thr
 x = linprog(f,Aeq,beq,A,b,lb,ub);
-Powers_To_Be_Transmitted_Ptxi_For_A_Reliable_Communication_Scenario = abs(x)
+Powers_To_Be_Transmitted_For_A_Reliable_Communication_Scenario = abs(x)
 
     
